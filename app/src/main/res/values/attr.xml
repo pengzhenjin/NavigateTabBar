@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigateTabBar">
+        <attr format="color|reference" name="navigateTabTextColor"/>
+        <attr format="color|reference" name="navigateTabSelectedTextColor"/>
+        <attr format="integer|reference" name="containerId"/>
+        <attr format="dimension|reference" name="navigateTabTextSize"/>
+    </declare-styleable>
+
+</resources>
