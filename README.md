@@ -3,4 +3,4 @@
 
 参考：[http://www.jianshu.com/p/65fe71f7f651](http://www.jianshu.com/p/65fe71f7f651 "Android仿Qzone底部导航栏加号弹出菜单")
 
-![gif](https://github.com/pengzhenjin/NavigateTabBar/blob/master/snapshot/3.gif)![image](https://github.com/pengzhenjin/NavigateTabBar/blob/master/snapshot/1.png) ![image](https://github.com/pengzhenjin/NavigateTabBar/blob/master/snapshot/2.png)
+![效果图](https://github.com/pengzhenjin/NavigateTabBar/blob/master/snapshot/1.gif)
