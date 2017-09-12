@@ -13,12 +13,18 @@
         android:layout_above="@+id/main_tabbar"
         />
 
-    <ImageView
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/main_tabbar"-->
+    <!--android:background="@mipmap/navigate_bar_top_shadow"-->
+    <!--android:contentDescription="@null"-->
+    <!--/>-->
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="1dp"
         android:layout_above="@+id/main_tabbar"
-        android:background="@mipmap/navigate_bar_top_shadow"
-        android:contentDescription="@null"
+        android:background="#f1f1f1"
         />
 
     <com.pzj.navigatetabbar.widgets.NavigateTabBar

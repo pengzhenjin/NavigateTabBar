@@ -163,7 +163,7 @@ public class PopupMenuView {
      */
     public void closePopupWindowAction() {
         if (this.mCloseIv != null && this.mCloseLayout != null) {
-            ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(mCloseIv, "rotation", 135f, 0f);
+            ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(this.mCloseIv, "rotation", 135f, 0f);
             objectAnimator.setDuration(300);
             objectAnimator.start();
 
