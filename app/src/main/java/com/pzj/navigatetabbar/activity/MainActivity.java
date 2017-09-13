@@ -10,7 +10,6 @@ import com.pzj.navigatetabbar.fragment.HomeFragment;
 import com.pzj.navigatetabbar.fragment.MessageFragment;
 import com.pzj.navigatetabbar.fragment.PersonFragment;
 import com.pzj.navigatetabbar.widgets.NavigateTabBar;
-import com.pzj.navigatetabbar.widgets.PopupMenuView;
 
 /**
  * MainActivity
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this, "更多", Toast.LENGTH_LONG).show();
-                PopupMenuView.getInstance().show(MainActivity.this, mTabMoreIv);
+                PopMenuView.getInstance().show(MainActivity.this, mTabMoreIv);
             }
         });
     }
@@ -57,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // 当popupWindow 正在展示的时候 按下返回键 关闭popupWindow 否则关闭activity
-        if (PopupMenuView.getInstance().isShowing()) {
-            PopupMenuView.getInstance().closePopupWindowAction();
+        if (PopMenuView.getInstance().isShowing()) {
+            PopMenuView.getInstance().closePopupWindowAction();
         }
         else {
             super.onBackPressed();

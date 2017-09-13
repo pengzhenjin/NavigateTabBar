@@ -1,4 +1,4 @@
-package com.pzj.navigatetabbar.widgets;
+package com.pzj.navigatetabbar.activity;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -14,21 +14,21 @@ import android.widget.Toast;
 import com.pzj.navigatetabbar.R;
 
 /**
- * PopupMenuView
+ * PopMenuView
  *
  * @author PengZhenjin
  * @date 2017-9-11
  */
-public class PopupMenuView {
+public class PopMenuView {
 
-    private static final String TAG = "PopupMenuView";
+    private static final String TAG = "PopMenuView";
 
-    public static PopupMenuView getInstance() {
+    public static PopMenuView getInstance() {
         return PopupMenuViewHolder.INSTANCE;
     }
 
     private static class PopupMenuViewHolder {
-        public static PopupMenuView INSTANCE = new PopupMenuView();
+        public static PopMenuView INSTANCE = new PopMenuView();
     }
 
     private View        mRootVew;
@@ -59,7 +59,7 @@ public class PopupMenuView {
      * @param context
      */
     private void createView(final Context context) {
-        this.mRootVew = LayoutInflater.from(context).inflate(R.layout.view_popup_menu, null);
+        this.mRootVew = LayoutInflater.from(context).inflate(R.layout.view_pop_menu, null);
         this.mPopupWindow = new PopupWindow(this.mRootVew, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         this.mPopupWindow.setFocusable(false); // 设置为失去焦点 方便监听返回键的监听
         //mPopupWindow.setClippingEnabled(false); // 如果想要popupWindow 遮挡住状态栏可以加上这句代码
